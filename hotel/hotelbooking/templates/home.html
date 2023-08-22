@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% csrf_token %}
+    {% load static %}
+    <title>Hotel Name - Welcome</title>
+    <style>
+        /* Body style */
+        body {
+            background-color: #00bfff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar style */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Main Content style */
+        main {
+            padding: 20px;
+        }
+
+        /* Home Section style */
+        #home {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #home h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        #home p {
+            font-size: 18px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #home img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Rooms Section style */
+        #rooms {
+            padding: 50px 0;
+        }
+
+        .room {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .room h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .room p {
+            font-size: 16px;
+            color: #333;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Amenities Section style */
+        #amenities {
+            padding: 50px 0;
+        }
+
+        #amenities ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #amenities li {
+            margin-bottom: 20px;
+            flex: 0 0 200px;
+            margin-right: 20px;
+        }
+
+        #amenities img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Contact Section style */
+        #contact {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #contact p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        #contact img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            background-color: #008000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to Hotel</h1>
+            <img src="{% static 'hotel.jpg' %}" alt="HOTEL">
+            <p><br>
+                Experience luxury and comfort at our hotel. We provide top-notch services and facilities for our guests.
+            </p></br>
+            <a href="booking" class="btn">Book Now</a>
+        </section>
+
+        <!-- Rooms Section -->
+        <section id="rooms">
+            <h2>Our Rooms</h2>
+            <div class="room">
+                <img src="{% static 'r.jpeg' %}" alt="HOTEL">
+
+                <h3>Deluxe Room</h3>
+                <p>
+                    Our Deluxe Room offers a comfortable and relaxing stay with modern amenities.
+                </p>
+                <br>
+                <a href="booking" class="btn">Book Now</a></br>
+            </div>
+            <!-- Add more room descriptions here -->
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities">
+            <h2>Amenities</h2>
+            <ul>
+                <li>
+                    <img src="{% static 's.jpg' %}" alt="HOTEL">
+                    <p><b>Swimming Pool</b></p>
+                </li>
+                <li>
+                    <img src="{% static 'rr.jpg' %}" alt="HOTEL">
+                    <p><b>Restaurant</b></p>
+                </li>
+                <li>
+                    <img src="{% static 'spa.jpg' %}" alt="HOTEL">
+                    <p><b>Spa and Wellness Center</b></p>
+                </li>
+                <li>
+                    <img src="{% static 'rr.jpg' %}" alt="HOTEL">
+                    <p><b>Business Center</b></p>
+                </li>
+                <li>
+                    <img src="{% static 'sir.jpeg' %}" alt="HOTEL">
+                    <p><b>Room Service</b></p>
+                </li>
+                <li>
+                    <img src="{% static 'wi.jpeg' %}" alt="HOTEL">
+                    <p><b>Free Wi-Fi</b></p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <img src="{% static 'sss.jpg' %}" alt="HOTEL">
+            <p>For reservations or any inquiries, please contact us:</p>
+            <p>Email: info@examplehotel.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </section>
+    </main>
+</body>
+</html>
