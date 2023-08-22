@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Styling for the header */
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Styling for the main section */
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styling for the booking details section */
+.booking-details {
+  margin: 20px;
+}
+
+/* Styling for the form elements */
+form {
+  display: inline-block;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
